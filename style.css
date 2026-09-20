@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+}
+
+.portal {
+    width: min(900px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 70px 0 40px;
+}
+
+
+/* Header */
+
+.header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #1f2937;
+    color: white;
+
+    border-radius: 16px;
+
+    font-size: 26px;
+}
+
+.header h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 17px;
+    color: #6b7280;
+}
+
+
+/* Applications */
+
+.applications {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.application-card {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 24px 26px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+
+    text-decoration: none;
+    color: inherit;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.application-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #cbd5e1;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+
+/* Application icon */
+
+.application-icon {
+    width: 64px;
+    height: 64px;
+
+    min-width: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f1f5f9;
+
+    border-radius: 14px;
+
+    font-size: 30px;
+}
+
+
+/* Application text */
+
+.application-info {
+    flex: 1;
+}
+
+.application-info h2 {
+    font-size: 21px;
+    font-weight: 600;
+
+    margin-bottom: 6px;
+}
+
+.application-info p {
+    font-size: 15px;
+    color: #6b7280;
+}
+
+
+/* Arrow */
+
+.arrow {
+    font-size: 28px;
+    color: #64748b;
+
+    transition: transform 0.2s ease;
+}
+
+.application-card:hover .arrow {
+    transform: translateX(5px);
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    margin-top: 45px;
+
+    font-size: 14px;
+
+    color: #9ca3af;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .portal {
+        width: calc(100% - 30px);
+        padding-top: 40px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+    .application-card {
+        padding: 20px;
+    }
+
+    .application-icon {
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+        font-size: 25px;
+    }
+
+    .application-info h2 {
+        font-size: 18px;
+    }
+
+    .application-info p {
+        font-size: 13px;
+    }
+
+    .arrow {
+        font-size: 24px;
+    }
+}
