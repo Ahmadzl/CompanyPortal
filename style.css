@@ -203,3 +203,8 @@ footer {
         font-size: 24px;
     }
 }
+.application-card:last-child {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
